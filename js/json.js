@@ -105,6 +105,25 @@ function displayInventory() {
         console.log(`${item.flavor}: ${item.quantity}`);
     });
 }
+//lab
+ const newFlavor1 ={
+ "name": "Strawberry Delight",
+ "calories": 300,
+ "type": "Ice Cream",
+ "ingredients": ["Mint", "Chocolate Chips", "Milk"],
+ "image": "https://Abdulhamid776.github.io/javascrpt-lab4/images/ice-cream-xtra1.svg"
+};
+
+const newFlavor2={
+"name": "Mint Chocolate Chip",
+"calories": 300,
+"type": "Ice Cream",
+"ingredients": ["Mint", "Chocolate Chips", "Milk"],
+"image": "https://Abdulhamid776.github.io/javascrpt-lab4/images/ice-cream-xtra2.svg"
+};
+// Add the new flavor to the topFlower array
+responseJson.topFlavors.puch(newFlavor1);
+responseJson.topFlavors.puch(newFlavor2);
 
 // Display the updated inventory
 displayInventory();
